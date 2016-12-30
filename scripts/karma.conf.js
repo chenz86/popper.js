@@ -65,6 +65,11 @@ module.exports = function(config) {
             testName: 'Popper.js',
             startConnect: false,
             tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
+            recordVideo: true,
+            connectOptions: {
+                verbose: true,
+                vv: true,
+            },
         },
         reporters: ['dots', 'saucelabs'],
     });
